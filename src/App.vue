@@ -118,7 +118,7 @@
 </template>
 
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref , watch} from "vue";
 
 const posts = ref([]);
 const isModalOpen = ref(false);
@@ -177,6 +177,9 @@ const isNotValidate = function(){
   }
   return errors.value.length > 0
 }
+watch(post, ()=> {
+errors.value = []
+})
 </script>
 
 <style scoped>
