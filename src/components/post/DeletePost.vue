@@ -2,7 +2,7 @@
 	<div>
 		<svg
 			@click="deletePost(post)"
-			class="size-4 text-red-600 cursor-pointer"
+			class="size-4 text-red-600 cursor-pointer mr-2"
 			data-slot="icon"
 			fill="none"
 			stroke-width="1.5"

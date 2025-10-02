@@ -63,14 +63,22 @@
         </div> 
       </div>
     </div>
-    <div class="">
-      <PostItem v-for="post in posts" :post="post"></PostItem>
+    <div class="flex">
+      <div class="w-1/2 mr-4">
+        <h3 class="mb-4">Posts</h3>
+        <PostItem v-for="post in posts" :post="post"></PostItem>
+      </div>
+      <div class="w-1/2">
+        <h3 class="mb-4">Favorite posts</h3>
+        <PostItem v-for="post in favoritePosts" :post="post"></PostItem>
+      </div>
+      
     </div>
   </div>
 </template>
 
 <script setup>
-import { provide, reactive, ref , watch} from "vue";
+import { computed, provide, reactive, ref , watch} from "vue";
 import PostItem from "./components/post/PostItem.vue";
 
 const posts = ref([]);
@@ -80,12 +88,15 @@ const errors = ref([])
 const post = reactive({
   title: "",
   content: "",
+  is_favorite: false
 });
 
 let editedPost = reactive({
   title: "",
   content: "",
 });
+
+const favoritePosts = computed(()=> posts.value.filter(postItem => postItem.is_favorite === true))
 
 // provide('posts', posts)
 // provide('editedPost', editedPost)
