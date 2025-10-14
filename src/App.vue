@@ -1,9 +1,10 @@
-<template>
+<!-- <template>
   <div
     class="modal-shadow"
     v-if="isModalOpen"
     @click.stop="isModalOpen = false"
   >
+
     <div @click.stop class="modal bg-white border border-gray-200 p-4 mb-4">
       <div class="mb-4">
         <input
@@ -31,6 +32,7 @@
     </div>
   </div>
   <div class="w-1/2 mx-auto p-4">
+    <router-view></router-view>
     <div class="bg-white border border-gray-200 p-4 mb-4">
       <div class="mb-4">
         <input
@@ -38,8 +40,14 @@
           placeholder="Title"
           class="p-4 border border-gray-200 w-full"
           v-model="post.title"
-        />
-      </div>
+        /> -->
+        <!-- <input
+          type="file"
+          ref="inputImage"
+          placeholder="Image"
+          class="p-4 border border-gray-200 w-full"
+        /> -->
+      <!-- </div>
       <div class="mb-4">
         <textarea
           v-model="post.content"
@@ -75,15 +83,28 @@
       
     </div>
   </div>
-</template>
+</template> -->
 
-<script setup>
-import { computed, provide, reactive, ref , watch} from "vue";
+<!-- <script setup>
+import { computed, onMounted, provide, reactive, ref , watch} from "vue";
 import PostItem from "./components/post/PostItem.vue";
+// options
+// hooks
+// data
+// computed
+// provide/inject
+// method
+// watch
+
+defineOptions({
+  name: 'App'
+})
+
 
 const posts = ref([]);
 const isModalOpen = ref(false);
 const errors = ref([])
+// const inputImage = ref(null)
 
 const post = reactive({
   title: "",
@@ -141,11 +162,9 @@ const isNotValidate = function(){
   }
   return errors.value.length > 0
 }
-watch(post, ()=> {
-errors.value = []
-})
-</script>
 
+</script> -->
+<!-- 
 <style scoped>
 .modal-shadow {
   width: 100%;
@@ -161,4 +180,19 @@ errors.value = []
 .modal {
   width: 50%;
 }
+</style>  -->
+
+<template>
+  <div>
+MY Sity
+  </div>
+  <RouterView></RouterView>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
 </style>
