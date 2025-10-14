@@ -1,5 +1,14 @@
 {
-  "posts": [
-		"title"
+	"posts": [
+		{
+			"id": 1,
+			"title": "My Awesome title",
+			"content": "Some education content"
+		},
+		{
+			"id": 2,
+			"title": "My second Awesome title",
+			"content": "Some second education content"
+		}
 	]
 }

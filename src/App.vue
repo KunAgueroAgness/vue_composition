@@ -183,14 +183,27 @@ const isNotValidate = function(){
 </style>  -->
 
 <template>
-  <div>
-MY Sity
-  </div>
-  <RouterView></RouterView>
+  <AdminLayout v-if="isAdmin">
+    <RouterView></RouterView>
+  </AdminLayout>
+  <ClientLayout v-else>
+    <RouterView></RouterView>
+  </ClientLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import AdminLayout from './layouts/AdminLayout.vue';
+import { useRoute, useRouter } from 'vue-router';
+import ClientLayout from './layouts/ClientLayout.vue';
 
+const router = useRouter()
+const route = useRoute()
+const isAdmin = ref(false)
+
+router.isReady().then(()=>{
+  isAdmin.value = route.name.split('.')[0] === 'admin'
+})
 </script>
 
 <style lang="scss" scoped>
