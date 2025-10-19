@@ -23,6 +23,11 @@ history: createWebHistory(),
 			component: () => import('@/pages/admin/posts/show.vue'),
       name: 'admin.posts.show'
 		},
+        {
+			path: '/admin/posts/:id/edit',
+			component: () => import('@/pages/admin/posts/edit.vue'),
+      name: 'admin.posts.edit'
+		},
 		{
 			path: '/dashboard',
 			component: () => import('@/pages/dashboard/index.vue'),
