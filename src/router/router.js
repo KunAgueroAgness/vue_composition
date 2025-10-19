@@ -10,9 +10,19 @@ history: createWebHistory(),
 		},
 		{
 			path: '/admin/posts',
-			component: () => import('@/pages/admin/posts/posts.vue'),
-      name: 'admin.posts.posts'
-		},,
+			component: () => import('@/pages/admin/posts/index.vue'),
+      name: 'admin.posts.index'
+		},
+        {
+			path: '/admin/posts/create',
+			component: () => import('@/pages/admin/posts/create.vue'),
+      name: 'admin.posts.create'
+		},
+    {
+			path: '/admin/posts/:id',
+			component: () => import('@/pages/admin/posts/show.vue'),
+      name: 'admin.posts.show'
+		},
 		{
 			path: '/dashboard',
 			component: () => import('@/pages/dashboard/index.vue'),
@@ -20,8 +30,8 @@ history: createWebHistory(),
 		},
 		{
 			path: '/posts',
-			component: () => import('@/pages/posts/posts.vue'),
-      name: 'posts.posts'
+			component: () => import('@/pages/posts/index.vue'),
+      name: 'posts.index'
 		},
 	]
 })

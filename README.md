@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+### Run json-server
+
+```
+npx json-server db.json
+```

@@ -1,14 +1,84 @@
 {
-	"posts": [
-		{
-			"id": 1,
-			"title": "My Awesome title",
-			"content": "Some education content"
-		},
-		{
-			"id": 2,
-			"title": "My second Awesome title",
-			"content": "Some second education content"
-		}
-	]
+  "posts": [
+    {
+      "id": "1",
+      "title": "My Awesome title",
+      "content": "Some education content"
+    },
+    {
+      "id": "2",
+      "title": "My second Awesome title",
+      "content": "Some second education content"
+    },
+    {
+      "id": "3",
+      "title": "The Basics of Machine Learning",
+      "content": "An introductory guide to understanding core concepts of ML and its applications."
+    },
+    {
+      "id": "4",
+      "title": "Exploring Deep Sea Ecosystems",
+      "content": "Discover the mysterious and fascinating creatures that inhabit the ocean's depths."
+    },
+    {
+      "id": "5",
+      "title": "A Beginner's Guide to Python Programming",
+      "content": "Start your coding journey with this easy-to-follow tutorial on Python syntax and basics."
+    },
+    {
+      "id": "6",
+      "title": "The History of Ancient Rome",
+      "content": "A brief overview of the key events and figures that shaped the Roman Empire."
+    },
+    {
+      "id": "7",
+      "title": "Understanding Quantum Physics",
+      "content": "Demystifying the strange and counter-intuitive world of quantum mechanics."
+    },
+    {
+      "id": "8",
+      "title": "Tips for Effective Time Management",
+      "content": "Learn practical strategies to organize your day and boost your productivity."
+    },
+    {
+      "id": "9",
+      "title": "The Art of Digital Photography",
+      "content": "Essential techniques and composition rules for capturing stunning digital images."
+    },
+    {
+      "id": "10",
+      "title": "Introduction to Sustainable Living",
+      "content": "How to reduce your environmental footprint through everyday choices and habits."
+    },
+    {
+      "id": "11",
+      "title": "The Science of Sleep",
+      "content": "Exploring the importance of sleep cycles and how to improve your sleep quality."
+    },
+    {
+      "id": "12",
+      "title": "Mastering the Art of Public Speaking",
+      "content": "Overcome stage fright and deliver compelling presentations with confidence."
+    },
+    {
+      "id": "c664",
+      "title": "",
+      "content": ""
+    },
+    {
+      "id": "49f7",
+      "title": "",
+      "content": ""
+    },
+    {
+      "id": "5e63",
+      "title": "aedtgfbv",
+      "content": "qetbf"
+    },
+    {
+      "id": "835f",
+      "title": "qe4thbrwqrtyghbn",
+      "content": "qetfhbrqetrbqetrbretb"
+    }
+  ]
 }
